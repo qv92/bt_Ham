@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let chuoi = prompt("nhap chuoi kiem tra")
+  function kiemtra(a) {
+    let check = true;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] != a[a.length - 1 - i]) {
+        check = false
+      }
+    }
+    return check
+  }
+  document.write(kiemtra(chuoi))
+</script>
+</body>
+</html>
